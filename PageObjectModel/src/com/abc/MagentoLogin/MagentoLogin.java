@@ -3,7 +3,7 @@ package com.abc.MagentoLogin;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import com.abc.MagentoObjects.Login;
 import com.abc.MagentoObjects.Main;
@@ -13,7 +13,7 @@ public class MagentoLogin {
 
 	public static void main(String[] args) {
 		String url ="https://www.magento.com";
-		WebDriver driver=new ChromeDriver();
+		WebDriver driver=new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.get(url);
